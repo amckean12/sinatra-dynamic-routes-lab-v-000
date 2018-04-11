@@ -10,8 +10,10 @@ class App < Sinatra::Base
   get "/square/:number" do
     @power = 2
     @numberToSquare = params[:num].to_i
-    @result = power(@numberToSquare, @power)
+    @result = power(@numberToSquare, @power).to_s
     "#{@result}"
   end
+
+
 
 end
