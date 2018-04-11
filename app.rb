@@ -44,9 +44,9 @@ class App < Sinatra::Base
       result = (number1 * number2).to_s
     elsif operantion == "/"
       result = (number1 / number2).to_s
-    end 
+    end
     result
-  end 
+  end
   
 
 
