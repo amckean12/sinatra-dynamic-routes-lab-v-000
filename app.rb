@@ -17,7 +17,7 @@ class App < Sinatra::Base
   get "/say/:number/:phrase" do
     numberOfTimes = params[:number].to_i
     phraseToRepeat = params[:phrase]
-    repeatedPhrase = (phraseToRepeat * numberOfTimes)\n
+    repeatedPhrase = (phraseToRepeat * numberOfTimes)
     repeatedPhrase
   end
 
