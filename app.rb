@@ -11,7 +11,7 @@ class App < Sinatra::Base
     @power = 2
     @numberToSquare = params[:number].to_i
     @result = @numberToSquare**@power.to_s
-    "#{@result}"
+    @result
   end
 
 
