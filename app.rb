@@ -31,20 +31,24 @@ class App < Sinatra::Base
     sentence
   end
 
-  get '/:operation/:number1/:number2' do 
+  get '/:operation/:number1/:number2' do
     operation = params[:operation]
     number1 = params[:number1].to_i
     number2 = params[:number2].to_i
     result = nil
     if operation == "+"
-      result = number1 + number2
+      result = (number1 + number2).to_s
     elsif operation == "-"
-      result = number1 - number2
+      result = (number1 - number2).to_s
     elsif operation == "*"
-      result = number1 * number2
+      result = (number1 * number2).to_s
     elsif operantion == "/"
-      result = number1 / number2
-      
+      result = (number1 / number2).to_s
+    end 
+    result
+  end 
+  
+
 
 
 
