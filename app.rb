@@ -36,7 +36,7 @@ class App < Sinatra::Base
     number1 = params[:number1].to_i
     number2 = params[:number2].to_i
     result = nil
-    if operation == "add" 
+    if operation == "add"
       result = (number1 + number2).to_s
     elsif operation == "subtract"
       result = (number1 - number2).to_s
@@ -44,6 +44,8 @@ class App < Sinatra::Base
       result = (number1 * number2).to_s
     elsif operantion == "divide"
       result = (number1 / number2).to_s
+    else
+      result = "Unable to perform this operation"
     end
     result
   end
